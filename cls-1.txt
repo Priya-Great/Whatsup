@@ -1,0 +1,18 @@
+import java.io.*;
+public class Main {
+
+	public static void main(String[] args)throws IOException{
+		//fill the code here
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter the country name");
+        String name=br.readLine();
+        System.out.println("Enter the country code");
+        String code=br.readLine();
+        System.out.println("Enter the isd code");
+        String isd=br.readLine();
+        Country countryIns=new Country(name,code,isd);
+        System.out.println(countryIns);
+        
+	}
+
+}
