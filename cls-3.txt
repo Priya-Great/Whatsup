@@ -1,0 +1,18 @@
+import java.io.*;
+public class Main {
+
+    public static void main(String[] args)throws IOException{
+		//fill the code here
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter Customer Address \nEnter the street");
+        String street=br.readLine();
+        System.out.println("Enter the city");
+        String city=br.readLine();
+        System.out.println("Enter the pincode");
+        Integer pincode=br.readline();
+        System.out.println("Enter the country");
+        String country=br.readLine();
+        Address addressIns=new Address(street,city,pincode,country);
+        addressIns.displayAddress();
+    }
+}
